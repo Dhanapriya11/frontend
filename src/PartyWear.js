@@ -9,7 +9,7 @@ const [maxPrice, setMaxPrice] = useState("");
      const [searchTerm, setSearchTerm] = useState("");
     // Fetch party wear from the backend
     useEffect(() => {
-        axios.get("http://backend-3-7pt3.onrender.com/partywears")
+        axios.get("https://backend-3-7pt3.onrender.com/partywears")
             .then((response )=> setPartyWears(response.data))
             .catch(error => console.error("Error fetching party wear data:", error));
     }, []);
