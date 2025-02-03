@@ -14,6 +14,7 @@ const DressDetails = () => {
     const navigate = useNavigate();
     
     useEffect(() => {
+        console.log("Fetching:", `https://backend-3-7pt3.onrender.com/dresses/${id}`);
         axios.get(`http://backend-3-7pt3.onrender.com/dresses/${id}`)
             .then(response => setDress(response.data))
             .catch(error => console.error("Error fetching dress details:", error));
