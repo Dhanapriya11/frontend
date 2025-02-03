@@ -12,7 +12,7 @@ const Casual = () => {
 
     // Fetch casual wear from the backend
     useEffect(() => {
-        axios.get("http://backend-3-7pt3.onrender.com/casuals")
+        axios.get("https://backend-3-7pt3.onrender.com/casuals")
             .then(response => setCasuals(response.data))
             .catch(error => console.error("Error fetching data:", error));
     }, []);
