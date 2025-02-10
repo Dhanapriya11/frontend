@@ -15,11 +15,11 @@ const DressDetails = () => {
     
     useEffect(() => {
         console.log("Fetching:", `https://backend-3-7pt3.onrender.com/dresses/${id}`);
-        axios.get(`http://backend-3-7pt3.onrender.com/dresses/${id}`)
+        axios.get(`https://backend-3-7pt3.onrender.com/dresses/${id}`)
             .then(response => setDress(response.data))
             .catch(error => console.error("Error fetching dress details:", error));
 
-        axios.get(`http://backend-3-7pt3.onrender.com/comments/${id}`)
+        axios.get(`https://backend-3-7pt3.onrender.com/comments/${id}`)
             .then(response => setComments(response.data))
             .catch(error => console.error("Error fetching comments:", error));
     }, [id]);
