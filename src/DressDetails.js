@@ -27,7 +27,7 @@ const DressDetails = () => {
     const handleAddComment = () => {
         if (newComment.trim() === "") return;
     
-        axios.post(`http://backend-3-7pt3.onrender.com/comments/${id}`, { 
+        axios.post(`https://backend-3-7pt3.onrender.com/comments/${id}`, { 
             user: "Guest",
             text: newComment, 
             rating: 5
